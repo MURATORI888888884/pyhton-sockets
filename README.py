@@ -12,7 +12,7 @@ for scan in list_de_ports:#criando um laço for para scanear cada elemento do me
     ports=socket.socket()#definindo um socket
     ports.settimeout(1.0)#definindo um tempo para a conexao
     
-    scanner = ports.connect_ex((client,scan))#scaneando e se conectando  
+    scanner = ports.connect_ex((client,scan))#se conectando  
     #verificando quais portas estao abertas 
     if scanner == 0:
         print(f"[*] portas encontradas em{scanner}")
